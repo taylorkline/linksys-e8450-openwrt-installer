@@ -242,6 +242,8 @@ linksys_e8450_installer() {
 
 	prepare_openwrt_ib
 
+   ls -alh ${INSTALLERDIR}/dl/
+
 	bundle_initrd recovery "${INSTALLERDIR}/dl/${OPENWRT_INITRD}"
 
 	mv "${WORKDIR}/${FILEBASE}.itb" "${DESTDIR}"
